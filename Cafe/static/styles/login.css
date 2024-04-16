@@ -1,18 +1,14 @@
 body {
     margin: 0;
-    background-color: #fba282;
   }
   
-  /*SPEACIAL DEAL ANNOUNCEMENT*/
-  .discount {
-    /* background-color: #aeebf3; */
-    background-color: #754332;
-    text-align: center;
-    padding: 3px;
-    color: white;
-    font-style: italic;
-  }
+  /*SPECIAL DEAL ANNOUNCEMENT*/
   
+  main {
+    background-image: url('/static/img/bakery.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   /* VERTICAL NAV BAR */
   .sidebar {
     background-color: #fbdfd8f1;
@@ -47,12 +43,14 @@ body {
   .sidebar-active {
     background-color: #ffbe63;
   }
-
   
-.footer,
-.footer a {
-  background-color: #754332;
-  color: white;
-  font-size: 12px;
-  padding: 4px;
-}
+  
+  
+  .footer,
+  .footer a {
+    background-color: #754332;
+    color: white;
+    font-size: 12px;
+    padding: 4px;
+  }
+  
