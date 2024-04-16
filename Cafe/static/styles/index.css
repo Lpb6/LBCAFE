@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+/*SPECIAL DEAL ANNOUNCEMENT*/
+
+.discount {
+  /* background-color: #aeebf3; */
+  background-color: #754332;
+  text-align: center;
+  padding: 3px;
+  color: white;
+  font-style: italic;
+}
+
+main {
+  background-image: url('/static/img/bakery.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* VERTICAL NAV BAR */
+.sidebar {
+  background-color: #fbdfd8f1;
+  min-width: 90px;
+}
+.bakery-logo {
+  max-width: 200px;
+  width: 90%;
+  text-align: center;
+  display: block;
+}
+
+.sidebar-button {
+  min-width: 80px;
+  width: 60%;
+  padding-block: 0.5rem;
+  margin-block: 20px;
+  background-color: #ffdcab;
+  color: #ffffff;
+  font-size: 1.5em;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.sidebar-button:hover {
+  transform: scale(1.05);
+}
+
+.sidebar-button:active {
+  box-shadow: 0 5px #666;
+}
+.sidebar-active {
+  background-color: #ffbe63;
+}
+
+.main-content {
+  margin-top: 30px;
+}
+
+.welcome {
+  padding: 20px;
+  text-align: center;
+  /* background-color: #fba2a2ab; */
+  background-color: #fbdfd8e0;
+  width: 65%;
+  border-radius: 5px;
+}
+
+.aboutUs {
+  padding: 15px;
+  text-align: center;
+  background-color: #fbdfd8e0;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.footer,
+.footer a {
+  background-color: #754332;
+  color: white;
+  font-size: 12px;
+  padding: 4px;
+}
