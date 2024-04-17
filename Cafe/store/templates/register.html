@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% load static %} 
+{% block styles %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}" />
+{% endblock %} 
+{% block content %}
+<main class="col d-flex flex-column align-items-center">
+  <form class="col-md-6 form-container p-5 mt-5 rounded d-flex flex-column align-content-stretch" method="POST" action="{% url 'register' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</main>
+{% endblock content %}
+   
+{% block scripts %}
+<script>src = '{% static 'js/register.js' %}';</script>
+{% endblock %}
+    

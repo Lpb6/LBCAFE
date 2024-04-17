@@ -49,6 +49,8 @@
             {% else %}
             <button class="sidebar-button mt-auto {% if request.path == '/login/' %} sidebar-active {% endif %}" onclick="location.href='{% url 'login' %}'">
                 Login</button>
+            <button class="sidebar-button {% if request.path == '/register/' %} sidebar-active {% endif %}" onclick="location.href='{% url 'register' %}'">
+                Register</button>
             {% endif %}
           </nav>
       {% block content %} {% endblock content %}
