@@ -18,9 +18,9 @@ def menu(request):
     context = {"products": products, "categories":categories}
     return render(request, 'menu.html',context)
 
-def checkout(request):
-    context = {}
-    return render(request, 'checkout.html',context)
+# def checkout(request):
+#     context = {}
+#     return render(request, 'checkout.html',context)
 
 def thankyou(request):
     context = {}
@@ -59,6 +59,7 @@ def register_user(request):
             user = authenticate(username=username, password = password)
             login(request, user)
             messages.success(request, ("You have been registered."))
+            return redirect('index')
         else:
             messages.success(request, ("Error, try again."))
             return redirect('register')
